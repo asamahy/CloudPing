@@ -8,7 +8,7 @@ list_max=();
 # Define the list of Oracle Cloud region endpoints
 while IFS= read -r line; do
     endpoints+=(${line//\"/})
-done < serverlist.txt
+done < $1
 
 
 # Number of pings to send
@@ -22,6 +22,7 @@ function ping_endpoint() {
     ping_avg=$(ping -c $ping_count $endpoint | tail -1 | awk -F '/' '{print $5}')
     ping_min=$(ping -c $ping_count $endpoint | tail -1 | awk -F '/' '{print $4}')
     ping_max=$(ping -c $ping_count $endpoint | tail -1 | awk -F '/' '{print $6}')
+    ping_loss=$(ping -c $ping_count $endpoint | tail -2 | head -1 | awk '{print $7}')
 
     # ping_avg="48.9"
     # ping_min="41.9"
@@ -47,9 +48,9 @@ for endpoint in "${endpoints[@]}"; do
 done
 pad=$(printf '%0.1s' "-"{1..50})
 padlength=50
-printf "%-*s | %-*s | %-*s | %-*s | %-*s\n" 20 "$pad" 10 "----------" 10 "----------" 10 "----------"
-printf "%-*s | %-*s | %-*s | %-*s | %-*s\n" 50 "Endpoint" 10 "Average" 10 "Min" 10 "Max"
-printf "%-*s | %-*s | %-*s | %-*s | %-*s\n" 20 "$pad" 10 "----------" 10 "----------" 10 "----------"
+printf "%-*s | %-*s | %-*s | %-*s | %-*s\n" 20 "$pad" 10 "----------" 10 "----------" 10 "----------" 10 "----"
+printf "%-*s | %-*s | %-*s | %-*s | %-*s\n" 50 "Endpoint" 10 "Average" 10 "Min" 10 "Max" 10 "Loss"
+printf "%-*s | %-*s | %-*s | %-*s | %-*s\n" 20 "$pad" 10 "----------" 10 "----------" 10 "----------" 10 "----"
 for ((i=0; i<${#endpoints[@]}; i++)); do
-    printf "%-*s | %-*s | %-*s | %-*s | %-*s\n" 50 "${endpoints[$i]}" 10 "${list_avg[$i]}" 10 "${list_min[$i]}" 10 "${list_max[$i]}"
+    printf "%-*s | %-*s | %-*s | %-*s | %-*s\n" 50 "${endpoints[$i]}" 10 "${list_avg[$i]}" 10 "${list_min[$i]}" 10 "${list_max[$i]}" 10 "${list_loss[$i]}"
 done
