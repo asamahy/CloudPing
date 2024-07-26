@@ -3,7 +3,7 @@
 list_avg=();
 list_min=();
 list_max=();
-ping_count=$2 # Number of pings to send to each endpoint
+ping_count=${2:-3} # Number of pings to send to each endpoint. default is 3
 
 # Define the list of Oracle Cloud region endpoints
 # read the endpoints from the file
@@ -12,13 +12,6 @@ while IFS= read -r line; do
     region_name+=("$(echo $line | awk -F',' '{print$1}')");
     endpoints+=("$(echo $line | awk -F',' '{print$2}')");
 done < $1
-
-
-# Number of pings to send to each endpoint (default is 3)
-if [ -z $ping_count ] || [ $ping_count == '-' ]; then
-    ping_count=1
-fi
-
 
 # set -x
 # Function to ping an endpoint and extract average latency
