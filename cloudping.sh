@@ -8,7 +8,9 @@ ping_count=$2 # Number of pings to send to each endpoint
 # Define the list of Oracle Cloud region endpoints
 # read the endpoints from the file
 while IFS= read -r line; do
-    endpoints+=(${line//\"/})
+    # endpoints+=(${line//\"/})
+    region_name+=("$(echo $line | awk -F',' '{print$1}')");
+    endpoints+=("$(echo $line | awk -F',' '{print$2}')");
 done < $1
 
 
@@ -25,10 +27,11 @@ function ping_endpoint() {
     echo "Pinging $endpoint..."
     # Perform the ping and extract the average latency from the output using awk.
     # the output of the ping command is saved in a variable. The last line of the output is used to extract the required values using awk.
-    ping_avg=$(ping -c $ping_count $endpoint | tail -1 | awk -F '/' '{print $5}')
-    ping_min=$(ping -c $ping_count $endpoint | tail -1 | awk -F '/' '{print $4}')
-    ping_max=$(ping -c $ping_count $endpoint | tail -1 | awk -F '/' '{print $6}')
-    ping_loss=$(ping -c $ping_count $endpoint | tail -2 | head -1 | awk '{print $7}')
+    result=$(ping -c $ping_count $endpoint)
+    ping_min=$(echo "$result" | tail -1 | awk -F '/' '{print $4}')
+    ping_avg=$(echo "$result" | tail -1 | awk -F '/' '{print $5}')
+    ping_max=$(echo "$result" | tail -1 | awk -F '/' '{print $6}')
+    ping_loss=$(echo "$result" | tail -2 | head -1 | awk '{print $7}')
 
     # Check if the ping was successful and the average is used as an indicator of success. If the ping was not successful, the endpoint is removed from the list.
     if [ -z "$ping_avg" ]; then
