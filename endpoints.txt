@@ -1,38 +1,38 @@
-Australia East (Sydney),objectstorage.ap-melbourne-1.oraclecloud.com
-Australia Southeast (Melbourne),objectstorage.sa-saopaulo-1.oraclecloud.com
-Brazil East (Sao Paulo),objectstorage.sa-vinhedo-1.oraclecloud.com
-Brazil Southeast (Vinhedo),objectstorage.ca-montreal-1.oraclecloud.com
-Canada Southeast (Montreal),objectstorage.ca-toronto-1.oraclecloud.com
-Canada Southeast (Toronto),objectstorage.sa-santiago-1.oraclecloud.com
-Chile Central (Santiago),objectstorage.sa-valparaiso-1.oraclecloud.com
-Chile West (Valparaiso),objectstorage.sa-bogota-1.oraclecloud.com
-Colombia Central (Bogota),objectstorage.eu-paris-1.oraclecloud.com
-France Central (Paris),objectstorage.eu-marseille-1.oraclecloud.com
-France South (Marseille),objectstorage.eu-frankfurt-1.oraclecloud.com
-Germany Central (Frankfurt),objectstorage.ap-hyderabad-1.oraclecloud.com
-India South (Hyderabad),objectstorage.ap-mumbai-1.oraclecloud.com
-India West (Mumbai),objectstorage.il-jerusalem-1.oraclecloud.com
-Israel Central (Jerusalem),objectstorage.eu-milan-1.oraclecloud.com
-Italy Northwest (Milan),objectstorage.ap-osaka-1.oraclecloud.com
-Japan Central (Osaka),objectstorage.ap-tokyo-1.oraclecloud.com
-Japan East (Tokyo),objectstorage.mx-queretaro-1.oraclecloud.com
-Mexico Central (Queretaro),objectstorage.mx-monterrey-1.oraclecloud.com
-Mexico Northeast (Monterrey),objectstorage.eu-amsterdam-1.oraclecloud.com
-Netherlands Northwest (Amsterdam),objectstorage.me-jeddah-1.oraclecloud.com
-Saudi Arabia West (Jeddah),objectstorage.eu-jovanovac-1.oraclecloud.com
-Serbia Central (Jovanovac),objectstorage.ap-singapore-1.oraclecloud.com
-Singapore (Singapore),objectstorage.ap-singapore-2.oraclecloud.com
-Singapore West (Singapore),objectstorage.af-johannesburg-1.oraclecloud.com
-South Africa Central (Johannesburg),objectstorage.ap-seoul-1.oraclecloud.com
-South Korea Central (Seoul),objectstorage.ap-chuncheon-1.oraclecloud.com
-South Korea North (Chuncheon),objectstorage.eu-madrid-1.oraclecloud.com
-Spain Central (Madrid),objectstorage.eu-stockholm-1.oraclecloud.com
-Sweden Central (Stockholm),objectstorage.eu-zurich-1.oraclecloud.com
-Switzerland North (Zurich),objectstorage.me-abudhabi-1.oraclecloud.com
-UAE Central (Abu Dhabi),objectstorage.me-dubai-1.oraclecloud.com
-UAE East (Dubai),objectstorage.uk-london-1.oraclecloud.com
-UK South (London),objectstorage.uk-cardiff-1.oraclecloud.com
-UK West (Newport),objectstorage.us-ashburn-1.oraclecloud.com
-US East (Ashburn),objectstorage.us-chicago-1.oraclecloud.com
-US Midwest (Chicago),objectstorage.us-phoenix-1.oraclecloud.com
-US West (Phoenix),objectstorage..oraclecloud.com
+Australia East (Sydney),objectstorage.ap-sydney-1.oraclecloud.com
+Australia Southeast (Melbourne),objectstorage.ap-melbourne-1.oraclecloud.com
+Brazil East (Sao Paulo),objectstorage.sa-saopaulo-1.oraclecloud.com
+Brazil Southeast (Vinhedo),objectstorage.sa-vinhedo-1.oraclecloud.com
+Canada Southeast (Montreal),objectstorage.ca-montreal-1.oraclecloud.com
+Canada Southeast (Toronto),objectstorage.ca-toronto-1.oraclecloud.com
+Chile Central (Santiago),objectstorage.sa-santiago-1.oraclecloud.com
+Chile West (Valparaiso),objectstorage.sa-valparaiso-1.oraclecloud.com
+Colombia Central (Bogota),objectstorage.sa-bogota-1.oraclecloud.com
+France Central (Paris),objectstorage.eu-paris-1.oraclecloud.com
+France South (Marseille),objectstorage.eu-marseille-1.oraclecloud.com
+Germany Central (Frankfurt),objectstorage.eu-frankfurt-1.oraclecloud.com
+India South (Hyderabad),objectstorage.ap-hyderabad-1.oraclecloud.com
+India West (Mumbai),objectstorage.ap-mumbai-1.oraclecloud.com
+Israel Central (Jerusalem),objectstorage.il-jerusalem-1.oraclecloud.com
+Italy Northwest (Milan),objectstorage.eu-milan-1.oraclecloud.com
+Japan Central (Osaka),objectstorage.ap-osaka-1.oraclecloud.com
+Japan East (Tokyo),objectstorage.ap-tokyo-1.oraclecloud.com
+Mexico Central (Queretaro),objectstorage.mx-queretaro-1.oraclecloud.com
+Mexico Northeast (Monterrey),objectstorage.mx-monterrey-1.oraclecloud.com
+Netherlands Northwest (Amsterdam),objectstorage.eu-amsterdam-1.oraclecloud.com
+Saudi Arabia West (Jeddah),objectstorage.me-jeddah-1.oraclecloud.com
+Serbia Central (Jovanovac),objectstorage.eu-jovanovac-1.oraclecloud.com
+Singapore (Singapore),objectstorage.ap-singapore-1.oraclecloud.com
+Singapore West (Singapore),objectstorage.ap-singapore-2.oraclecloud.com
+South Africa Central (Johannesburg),objectstorage.af-johannesburg-1.oraclecloud.com
+South Korea Central (Seoul),objectstorage.ap-seoul-1.oraclecloud.com
+South Korea North (Chuncheon),objectstorage.ap-chuncheon-1.oraclecloud.com
+Spain Central (Madrid),objectstorage.eu-madrid-1.oraclecloud.com
+Sweden Central (Stockholm),objectstorage.eu-stockholm-1.oraclecloud.com
+Switzerland North (Zurich),objectstorage.eu-zurich-1.oraclecloud.com
+UAE Central (Abu Dhabi),objectstorage.me-abudhabi-1.oraclecloud.com
+UAE East (Dubai),objectstorage.me-dubai-1.oraclecloud.com
+UK South (London),objectstorage.uk-london-1.oraclecloud.com
+UK West (Newport),objectstorage.uk-cardiff-1.oraclecloud.com
+US East (Ashburn),objectstorage.us-ashburn-1.oraclecloud.com
+US Midwest (Chicago),objectstorage.us-chicago-1.oraclecloud.com
+US West (Phoenix),objectstorage.us-phoenix-1.oraclecloud.com

@@ -9,7 +9,7 @@ region_name+=("$(echo $line | awk -F',' '{print$1}')");
 region_id+=("$(echo $line | awk -F',' '{print$2}')");
 done < $1
 
-i=2;\
+i=1;\
 for region in "${region_name[@]:1}"; do
 echo ${region}\,objectstorage\.${region_id[$i]}\.oraclecloud\.com >> endpoints.txt;
 ((i++));
